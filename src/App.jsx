@@ -8,8 +8,8 @@ import Social from './components/Social'
 function App() {
   return (
     <div className="container">
-      <About />
       <Info />
+      <About />
       <Interests />
       <Social />
     </div>
