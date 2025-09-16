@@ -49,9 +49,8 @@ h2 {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1em;
-  font-size: 14px;
+  margin: 0 0 0.5em;
+  font-size: 12px;
 }
 
 button {

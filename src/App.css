@@ -1,6 +1,6 @@
 .container {
-  max-width: 400px;
-  max-height: 100%;
+  max-width: 317px;
+  max-height: 780px;
   margin: 0 auto;
   padding: 0;
   background: var(--color-bg);
@@ -10,7 +10,7 @@
 .info img {
   width: 100%;
   border-radius: 16px 16px 0 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .info > h1, .info > p {
@@ -19,3 +19,27 @@
   margin-right: auto;
 }
 
+.about, .interests {
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social , .contact {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+button {
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+button img {
+  color: var(--color-dark);
+  width: 16px;
+  height: 16px;
+}
