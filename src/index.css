@@ -56,18 +56,22 @@ p {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-radius: 20px;
+  border: none;
   padding: 5px 15px;
   font-size: 14px;
   font-weight: 500;
   font-family: inherit;
+  color: var(--color-dark);
   background-color: var(--color-text);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color 0.25s;
 }
 button:hover {
-  border-color: var(--color-icon);
+  background-color: var(--color-icon);
 }
 button:focus,
 button:focus-visible {

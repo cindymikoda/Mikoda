@@ -48,15 +48,13 @@ h1, h2, p {
   padding-bottom: 1.5rem;
 }
 
-button {
-  color: var(--color-dark);
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
+.contact button img {
+  width: 1.2em;
+  height: 1.2em;
 }
 
-button img {
-  color: var(--color-dark);
-  width: 16px;
-  height: 16px;
+.social button img {
+  padding: 5px;
+  width: 1.5em;
+  height: 1.5em;
 }

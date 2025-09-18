@@ -4,7 +4,7 @@ export default function Info() {
       <img src="profilepic.jpg" alt="Cindy Mikoda" />
       <h1>Cindy Mikoda</h1>
       <p className="position">Front-End Developer</p>
-      <p>A website domain here that I do not yet have.</p>
+      <p>( A website domain here that I do not yet have. )</p>
       <div className="contact">
         <button className="email-button">
           <img src="Mail-icon.svg" alt="Email icon" />
