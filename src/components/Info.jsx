@@ -3,7 +3,7 @@ export default function Info() {
     <section className="info">
       <img src="profilepic.jpg" alt="Cindy Mikoda" />
       <h1>Cindy Mikoda</h1>
-      <p>Front-End Developer</p>
+      <p className="position">Front-End Developer</p>
       <p>A website domain here that I do not yet have.</p>
       <div className="contact">
         <button className="email-button">
