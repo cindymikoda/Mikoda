@@ -20,8 +20,9 @@ export default function App() {
       <div className="container-card">
         <About />
         <Social />
-        <Buttons />
-        <Footer />
+        <Buttons title="Portfolio/Projects" link="#" />
+        <Buttons title="Resume/CV" link="#" />
+        <Footer isDark={isDark} toggleTheme={toggleTheme} />
       </div>
     </div>
   );

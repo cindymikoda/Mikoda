@@ -1,10 +1,10 @@
-export default function Button({ title, link }) {
+export default function Buttons({ title, link }) {
   return (
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="custom-button"
+      className="card-section custom-button"
     >
       {title}
     </a>
