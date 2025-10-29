@@ -1,12 +1,18 @@
-export default function Social() {
+import { socialLinks } from "../library/socialData";
+
+export default function Socials() {
   return (
-    <section className="social">
-      <button className="instagram-btn">
-        <img src="Instagram-icon.svg" alt="Instagram icon" /></button>
-      <button className="linkedin-btn">
-        <img src="LinkedIn-icon.svg" alt="LinkedIn icon" /></button>
-      <button className="github-btn">
-        <img src="Github-icon.svg" alt="GitHub icon" /></button>
-    </section>
+    <div className="card-section socials-section">
+      {socialLinks.map((social) => (
+        <a
+          key={social.id}
+          href={social.href}
+          className="social-icon"
+          aria-label={social.label}
+        >
+          <img src={social.icon} alt={social.label} />
+        </a>
+      ))}
+    </div>
   );
 }

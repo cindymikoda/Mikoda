@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./App.css";
 import About from "./components/About";
-import Info from "./components/Info";
-import Interests from "./components/Footer";
 import Social from "./components/Social";
+import Buttons from "./components/Buttons";
+import Footer from "./components/Footer";
 
 function App() {
   return (
