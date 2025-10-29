@@ -1,7 +1,7 @@
-import instagramIcon from "../assets/instagram-icon.svg";
-import linkedinIcon from "../assets/linkedin-icon.svg";
-import githubIcon from "../assets/github-icon.svg";
-import emailIcon from "../assets/email-icon.svg";
+import instagramIcon from "src/assets/instagram-icon.svg";
+import linkedinIcon from "src/assets/linkedin-icon.svg";
+import githubIcon from "src/assets/github-icon.svg";
+import emailIcon from "src/assets/email-icon.svg";
 
 export const socialLinks = [
   {
