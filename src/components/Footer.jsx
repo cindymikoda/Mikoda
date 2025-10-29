@@ -2,7 +2,7 @@ export default function Footer({ isDark, toggleTheme }) {
   return (
     <div className="card-section footer-section">
       <p className="footer-text">
-        Made with love by Cindy |{" "}
+        Made with love by Cindy |
         <a
           href="https://github.com/cindymikoda/Mikoda"
           target="_blank"
