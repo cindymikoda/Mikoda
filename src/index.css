@@ -39,10 +39,10 @@
 
   /* Component Sizes */
   --profile-pic-size: 120px;
-  --social-icon-size: 44px;
+  --social-icon-size: 35px;
   --icon-size: 24px;
   --toggle-width: 60px;
-  --toggle-height: 30px;
+  --toggle-height: 32px;
 
   /* Dark Theme Colors */
   --dark-bg-start: #0a0e27;
