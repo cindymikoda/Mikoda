@@ -9,6 +9,8 @@ export default function Socials() {
           href={social.href}
           className="social-icon"
           aria-label={social.label}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={social.icon} alt={social.label} />
         </a>
