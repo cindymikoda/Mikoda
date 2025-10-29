@@ -1,20 +1,40 @@
+/* ============================================
+   BASE LAYOUT
+   ============================================ */
+
 .app {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: var(--spacing-lg);
   position: relative;
-  transition: background-color 0.5s ease;
+  transition: background-color var(--transition-medium);
 }
 
+/* ============================================
+   THEME BACKGROUNDS
+   ============================================ */
+
 .dark-theme {
-  background: linear-gradient(to bottom, #0a0e27 0%, #1a1d3a 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--dark-bg-start) 0%,
+    var(--dark-bg-end) 100%
+  );
 }
 
 .light-theme {
-  background: linear-gradient(to bottom, #87ceeb 0%, #e0f6ff 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--light-bg-start) 0%,
+    var(--light-bg-end) 100%
+  );
 }
+
+/* ============================================
+   CARD CONTAINER
+   ============================================ */
 
 .container-card {
   position: relative;
@@ -23,176 +43,198 @@
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 24px;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
 }
+
+/* ============================================
+   SHARED CARD STYLES (Glassmorphism)
+   ============================================ */
 
 .card-section {
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
   backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
 }
 
+/* Theme-specific card backgrounds */
 .dark-theme .card-section {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--dark-card-bg);
 }
 
 .light-theme .card-section {
-  background: rgba(255, 255, 255, 0.4);
+  background: var(--light-card-bg);
 }
 
-/* About Section */
+/* Card hover effects */
+.card-section:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.dark-theme .card-section:hover {
+  background: var(--dark-card-hover);
+}
+
+.light-theme .card-section:hover {
+  background: var(--light-card-hover);
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
 .about-section {
-  padding-block: 20px;
+  padding-block: var(--spacing-lg);
   text-align: center;
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: var(--profile-pic-size);
+  height: var(--profile-pic-size);
+  border-radius: var(--radius-full);
   object-fit: cover;
-  margin-bottom: 8px;
-  border: 3px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: var(--spacing-sm);
+  border: 3px solid var(--border-color);
 }
 
 .about-section h1 {
-  font-size: 28px;
-  margin-bottom: 4px;
-  font-weight: 700;
+  font-size: var(--font-lg);
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-bold);
 }
 
 .dark-theme .about-section h1 {
-  color: #ffffff;
+  color: var(--dark-text-primary);
 }
 
 .light-theme .about-section h1 {
-  color: #1a1a1a;
+  color: var(--light-text-primary);
 }
 
 .work-field {
-  font-size: 14px;
+  font-size: var(--font-sm);
   opacity: 0.8;
 }
 
 .dark-theme .work-field {
-  color: #d1d5db;
+  color: var(--dark-text-secondary);
 }
 
 .light-theme .work-field {
-  color: #4b5563;
+  color: var(--light-text-secondary);
 }
 
-/* Socials Section */
+/* ============================================
+   SOCIALS SECTION
+   ============================================ */
+
 .socials-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-block: 10px;
+  padding-block: var(--spacing-sm);
 }
 
 .social-icon {
-  width: 44px;
-  height: 44px;
+  width: var(--social-icon-size);
+  height: var(--social-icon-size);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
   text-decoration: none;
 }
 
 .social-icon img {
-  width: 24px;
-  height: 24px;
+  width: var(--icon-size);
+  height: var(--icon-size);
   display: block;
-  object-fit: contain; /* Prevents distortion */
+  object-fit: contain;
 }
 
+/* Icon color filters */
 .dark-theme .social-icon img {
-  filter: brightness(0) invert(1); /* Makes icons white */
+  filter: brightness(0) invert(1);
 }
 
 .light-theme .social-icon img {
-  filter: brightness(0); /* Makes icons black */
+  filter: brightness(0);
 }
 
+/* Social icon hover */
 .social-icon:hover {
   transform: translateY(-2px);
 }
 
 .dark-theme .social-icon:hover {
-  background: rgba(255, 255, 255, 0.07);
+  background: var(--overlay-dark);
 }
 
 .light-theme .social-icon:hover {
-  background: rgba(255, 255, 255, 0.585);
+  background: var(--overlay-light);
 }
 
-/* Custom Button */
+/* ============================================
+   BUTTON COMPONENT
+   ============================================ */
+
 .custom-button {
-  padding-block: 16px;
+  padding-block: var(--spacing-md);
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: var(--font-md);
+  font-weight: var(--font-normal);
 }
 
 .dark-theme .custom-button {
-  background: rgba(0, 0, 0, 0.3);
-  color: #ffffff;
+  color: var(--dark-text-primary);
 }
 
 .light-theme .custom-button {
-  background: rgba(255, 255, 255, 0.4);
-  color: #1a1a1a;
+  color: var(--light-text-primary);
 }
 
-.custom-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.dark-theme .custom-button:hover {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.light-theme .custom-button:hover {
-  background: rgba(255, 255, 255, 0.6);
-}
+/* ============================================
+   FOOTER SECTION
+   ============================================ */
 
 .footer-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: var(--spacing-md) var(--spacing-lg);
 }
 
 .footer-text {
-  font-size: 12px;
+  font-size: var(--font-xs);
   opacity: 0.8;
   margin: 0;
 }
 
 .dark-theme .footer-text {
-  color: #d1d5db;
+  color: var(--dark-text-secondary);
 }
 
 .light-theme .footer-text {
-  color: #4b5563;
+  color: var(--light-text-secondary);
 }
 
-/* Theme Toggle Switch */
+/* ============================================
+   THEME TOGGLE SWITCH
+   ============================================ */
+
 .theme-toggle-wrapper {
   position: relative;
 }
 
 .toggle-switch {
   position: relative;
-  width: 60px;
-  height: 30px;
+  width: var(--toggle-width);
+  height: var(--toggle-height);
   display: block;
   cursor: pointer;
 }
@@ -204,27 +246,26 @@
   height: 0;
 }
 
+/* Toggle slider track */
 .slider {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
-  transition: all 0.3s ease;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
 }
 
-/* Dark theme - slider background (unchecked) */
 .dark-theme .slider {
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--dark-card-bg);
 }
 
-/* Light theme - slider background (checked) */
 .light-theme .slider {
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--light-card-hover);
 }
 
-/* The moon/sun circle */
+/* Toggle circle (moon/sun) */
 .slider::before {
   content: "";
   position: absolute;
@@ -232,33 +273,63 @@
   left: 4px;
   width: 22px;
   height: 22px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
-/* Dark theme - moon (crescent shadow effect) */
+/* Dark theme - moon with crescent */
 .dark-theme .slider::before {
-  background-color: #1a1d3a;
+  background-color: var(--dark-moon-bg);
   box-shadow: inset 8px -2px 0px 0px rgba(255, 255, 255, 0.9);
 }
 
-/* Light theme - sun (moved to right) */
+/* Light theme - sun moved to right */
 .light-theme .slider::before {
-  transform: translateX(30px);
-  background-color: #fdb813;
+  transform: translateX(var(--spacing-xl));
+  background-color: var(--light-sun-bg);
   box-shadow: 0 0 8px rgba(253, 184, 19, 0.6);
 }
 
-/* Hover effect */
+/* Toggle hover effect */
 .toggle-switch:hover .slider {
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: var(--border-color-hover);
 }
 
 .dark-theme .toggle-switch:hover .slider {
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--dark-card-light);
 }
 
 .light-theme .toggle-switch:hover .slider {
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--light-card-light);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 480px) {
+  .container-card {
+    max-width: 100%;
+    padding: var(--spacing-md);
+    gap: 12px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-section h1 {
+    font-size: 24px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-section {
+    padding: var(--spacing-lg);
+  }
 }

@@ -4,6 +4,73 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 30px;
+
+  /* Border Radius */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 50px;
+  --radius-full: 50%;
+
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.5s ease;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+  /* Font Sizes */
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 28px;
+
+  /* Font Weights */
+  --font-normal: 500;
+  --font-bold: 700;
+
+  /* Component Sizes */
+  --profile-pic-size: 120px;
+  --social-icon-size: 44px;
+  --icon-size: 24px;
+  --toggle-width: 60px;
+  --toggle-height: 30px;
+
+  /* Dark Theme Colors */
+  --dark-bg-start: #0a0e27;
+  --dark-bg-end: #1a1d3a;
+  --dark-card-bg: rgba(0, 0, 0, 0.3);
+  --dark-card-hover: rgba(0, 0, 0, 0.4);
+  --dark-card-light: rgba(0, 0, 0, 0.5);
+  --dark-text-primary: #ffffff;
+  --dark-text-secondary: #d1d5db;
+  --dark-moon-bg: #1a1d3a;
+
+  /* Light Theme Colors */
+  --light-bg-start: #87ceeb;
+  --light-bg-end: #e0f6ff;
+  --light-card-bg: rgba(255, 255, 255, 0.4);
+  --light-card-hover: rgba(255, 255, 255, 0.6);
+  --light-card-light: rgba(255, 255, 255, 0.7);
+  --light-text-primary: #1a1a1a;
+  --light-text-secondary: #4b5563;
+  --light-sun-bg: #fdb813;
+
+  /* Shared Colors */
+  --border-color: rgba(255, 255, 255, 0.15);
+  --border-color-hover: rgba(255, 255, 255, 0.3);
+  --overlay-dark: rgba(0, 0, 0, 0.07);
+  --overlay-light: rgba(255, 255, 255, 0.585);
+}
+
 body {
   font-family: system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
