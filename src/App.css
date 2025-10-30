@@ -28,6 +28,7 @@
   background: linear-gradient(
     to bottom,
     var(--light-bg-start) 0%,
+    var(--light-sun-bg) 70%,
     var(--light-bg-end) 100%
   );
 }
@@ -54,7 +55,7 @@
 .card-section {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
-  backdrop-filter: blur(4.5px);
+  backdrop-filter: blur(2.5px);
   border: 1px solid var(--border-color);
   transition: all var(--transition-fast);
 }

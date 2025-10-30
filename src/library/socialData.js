@@ -1,31 +1,26 @@
-import instagramIcon from "src/assets/instagram-icon.svg";
-import linkedinIcon from "src/assets/linkedin-icon.svg";
-import githubIcon from "src/assets/github-icon.svg";
-import emailIcon from "src/assets/email-icon.svg";
-
 export const socialLinks = [
   {
     id: "instagram",
     label: "Instagram",
     href: "https://instagram.com/mikodacindy",
-    icon: instagramIcon,
+    icon: "/instagram-icon.svg",
   },
   {
     id: "linkedin",
     label: "LinkedIn",
     href: "https://linkedin.com/in/cindy-mikoda-9951b8194/",
-    icon: linkedinIcon,
+    icon: "/linkedin-icon.svg",
   },
   {
     id: "github",
     label: "GitHub",
     href: "https://github.com/cindymikoda",
-    icon: githubIcon,
+    icon: "/github-icon.svg",
   },
   {
     id: "email",
     label: "Email",
     href: "mailto:cmikodak@gmail.com",
-    icon: emailIcon,
+    icon: "/email-icon.svg",
   },
 ];

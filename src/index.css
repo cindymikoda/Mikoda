@@ -47,22 +47,22 @@
   /* Dark Theme Colors */
   --dark-bg-start: #0a0e27;
   --dark-bg-end: #1a1d3a;
-  --dark-card-bg: rgba(0, 0, 0, 0.3);
-  --dark-card-hover: rgba(0, 0, 0, 0.4);
+  --dark-card-bg: rgba(0, 0, 0, 0.156);
+  --dark-card-hover: rgba(0, 0, 0, 0.355);
   --dark-card-light: rgba(0, 0, 0, 0.5);
   --dark-text-primary: #ffffff;
-  --dark-text-secondary: #d1d5db;
+  --dark-text-secondary: #a3e0ff;
   --dark-moon-bg: #1a1d3a;
 
   /* Light Theme Colors */
-  --light-bg-start: #e99783;
-  --light-bg-end: #cc7b91;
-  --light-card-bg: rgba(255, 255, 255, 0.4);
-  --light-card-hover: rgba(255, 255, 255, 0.6);
+  --light-bg-start: #9ee4eb;
+  --light-bg-end: #cc7b7b;
+  --light-card-bg: rgba(255, 255, 255, 0.211);
+  --light-card-hover: rgba(255, 255, 255, 0.39);
   --light-card-light: rgba(255, 255, 255, 0.7);
   --light-text-primary: #1a1a1a;
-  --light-text-secondary: #4b5563;
-  --light-sun-bg: rgba(247, 202, 67, 0.664);
+  --light-text-secondary: #ff6161;
+  --light-sun-bg: rgba(252, 164, 63, 0.664);
 
   /* Shared Colors */
   --border-color: rgba(255, 255, 255, 0.15);

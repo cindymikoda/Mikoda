@@ -13,7 +13,7 @@
   right: -10%;
   width: 50%;
   height: 50%;
-  background: radial-gradient (circle, var(--light-sun-bg) 0%, transparent 50%);
+  background: radial-gradient(circle, var(--light-sun-bg) 0%, transparent 50%);
   animation: pulse 8s ease-in-out infinite;
 }
 
@@ -32,7 +32,7 @@
   background: rgba(255, 255, 255, 0.8);
   border-radius: 100px;
   animation: float 60s linear infinite;
-  filter: blur(9px);
+  filter: blur(4px);
 }
 
 .cloud::before,
@@ -41,7 +41,7 @@
   position: absolute;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 100px;
-  filter: blur(4px);
+  filter: blur(2px);
 }
 
 .cloud-1 {
