@@ -55,14 +55,14 @@
   --dark-moon-bg: #1a1d3a;
 
   /* Light Theme Colors */
-  --light-bg-start: #87ceeb;
+  --light-bg-start: #e99783;
   --light-bg-end: #e0f6ff;
   --light-card-bg: rgba(255, 255, 255, 0.4);
   --light-card-hover: rgba(255, 255, 255, 0.6);
   --light-card-light: rgba(255, 255, 255, 0.7);
   --light-text-primary: #1a1a1a;
   --light-text-secondary: #4b5563;
-  --light-sun-bg: #fdb813;
+  --light-sun-bg: rgba(247, 202, 67, 0.664);
 
   /* Shared Colors */
   --border-color: rgba(255, 255, 255, 0.15);

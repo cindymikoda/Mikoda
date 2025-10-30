@@ -13,11 +13,7 @@
   right: -10%;
   width: 50%;
   height: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(243, 210, 110, 0.595) 0%,
-    transparent 50%
-  );
+  background: radial-gradient (circle, var(--light-sun-bg) 0%, transparent 50%);
   animation: pulse 8s ease-in-out infinite;
 }
 
