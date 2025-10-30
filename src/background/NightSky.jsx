@@ -3,8 +3,8 @@ import "./night.css";
 
 export default function NightSky() {
   const [stars] = useState(() => {
-    // Generate 100 random stars with random positions, sizes, and animation delays
-    return Array.from({ length: 100 }, (_, i) => ({
+    // Generate 170 random stars with random positions, sizes, and animation delays
+    return Array.from({ length: 170 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
       top: Math.random() * 100,
@@ -15,8 +15,8 @@ export default function NightSky() {
   });
 
   const [shootingStars] = useState(() => {
-    // Generate 3 shooting stars with random positions and animation delays
-    return Array.from({ length: 3 }, (_, i) => ({
+    // Generate 5 shooting stars with random positions and animation delays
+    return Array.from({ length: 5 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
       top: Math.random() * 50,
